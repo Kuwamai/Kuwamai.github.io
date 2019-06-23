@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset=“UTF-8”>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>クワマイのホームページ</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img src="img/kuwamai_header.png" alt="kuwamai" width="100%"/>
+      </a>
+    </div>
+    <h1 align="center">特異スペクトル変換を用いた加速度の異常検知</h1>
+    <div class="works">
+      <div>
+        <p>
+          移動ロボットにIMUを搭載し、加速度を特異スペクトル変換することで、ロボットの振動パターンの変化度を計算するROSパッケージです。
+          壁への衝突や移動方向の切り替えを検知することができます。
+          算出した変化度はブラウザ上でリアルタイムに確認することができます。<br><br>
+          <a href="https://github.com/Kuwamai/imu_sst">imu_sst - GitHub</a><br>
+          <a href="https://youtu.be/AYRwnSLIlD0">実験の様子 - YouTube</a><br>
+        </p>
+      </div>
+      <div>
+        <img src="img/imu_sst.png" width="100%"/>
+        <p>実験の様子 右上が算出された変化度</p>
+      </div>
+    </div>
+  </body>
+</html>
