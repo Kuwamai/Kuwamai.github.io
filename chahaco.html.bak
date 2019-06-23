@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta http-equiv="content-type" charset="utf-8">
+    <meta charset=“UTF-8”>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>クワマイのホームページ</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -14,17 +14,25 @@
         <img src="img/kuwamai_header.png" alt="kuwamai" width="100%"/>
       </a>
     </div>
-    <h1 align="center">パノラマカメラを用いたテレプレゼンスシステム</h1>
+    <h1 align="center">茶運びーとる</h1>
     <div class="works">
       <div>
         <p>
-          全方向移動ロボットにパノラマカメラを搭載したテレプレゼンスロボットです。
-          Web VRを用いてスマホやPCから簡単にカメラ映像にアクセスすることができます。
+          初めて製作したロボットです。湯呑みを乗せると走り出します。機体前部の触覚で、落下と衝突の両方を検知し回避行動をとることができます。<br><br>
+          <a href="https://youtu.be/AFfkTfrvqeo">実験映像 - YouTube</a>
         </p>
       </div>
       <div>
-        <img src="img/telepresence.JPG" width="100%"/>
+        <img src="img/chahaco.JPG" width="100%"/>
         <p>製作した機体</p>
+      </div>
+      <div>
+        <img src="img/chahaco_kuwa.JPG" width="100%"/>
+        <p>製作したカバー</p>
+      </div>
+      <div>
+        <img src="img/chahaco_goki.JPG" width="100%"/>
+        <p>ゴキブリバージョン</p>
       </div>
     </div>
   </body>
