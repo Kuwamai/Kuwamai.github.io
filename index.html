@@ -1,171 +1,28 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta http-equiv="content-type" charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <title>クワマイのホームページ</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-  </head>
+---
+layout: default
+title: "クワマイのホームページ"
+---
 
-  <body>
-    <div class="header">
-      <a href="index.html">
-        <img src="img/kuwamai_header.png" alt="kuwamai" width="100%"/>
+<h1 align="center">クワマイのホームページ</h1>
+<p align="center">大学でロボティクスを学んでいます。<br>科学やデザイン、アート関係が好きです。</p>
+<div class="col_2">
+  <div>
+    <h2>Links</h2>
+    <p>
+      <a href="https://twitter.com/beet_lex">Twitter: beet_lex</a><br>
+      <a href="https://github.com/Kuwamai">GitHub: Kuwamai</a><br>
+      <a href="http://kuwamai.hatenablog.com">Blog: クワマイでもできる</a><br>
+      <a href="https://www.youtube.com/user/KuwamaiCh">YouTube: Kuwamai</a><br>
+      <a href="https://suzuri.jp/Kuwamai">Suzuri: Kuwamai</a>
+    </p>
+  </div>
+
+  {% for post in site.posts %}
+    <div>
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.thumb}}" width="100%"/>
+        <p>{{ post.date | date: '%Y/%m/%d' }}: {{ post.title }}</p>
       </a>
     </div>
-    <h1 align="center">クワマイのホームページ</h1>
-    <p align="center">大学でロボティクスを学んでいます。<br>科学やデザイン、アート関係が好きです。</p>
-    <div class="col_2">
-      <div>
-        <h2>Links</h2>
-        <p>
-          <a href="https://twitter.com/beet_lex">Twitter: beet_lex</a><br>
-          <a href="https://github.com/Kuwamai">GitHub: Kuwamai</a><br>
-          <a href="http://kuwamai.hatenablog.com">Blog: クワマイでもできる</a><br>
-          <a href="https://www.youtube.com/user/KuwamaiCh">YouTube: Kuwamai</a><br>
-          <a href="https://suzuri.jp/Kuwamai">Suzuri: Kuwamai</a>
-        </p>
-      </div>
-      <div>
-        <a href="works/isaac_sim.html">
-          <img src="img/isaac_sim.png" width="100%"/>
-          <p>Isaac Simを用いたシミュレーション-2019</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/hanko_robot.html">
-          <img src="img/hanko_robot.png" width="100%"/>
-          <p>押印ロボット-2019</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/telepresence2.html">
-          <img src="img/telepresence2.JPG" width="100%"/>
-          <p>簡易テレプレゼンスロボット-2019</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/manipulation.html">
-          <img src="img/manipulation.png" width="100%"/>
-          <p>VRからマニピュレータ操作-2019</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/kinematics.html">
-          <img src="img/kinematics.png" width="100%"/>
-          <p>マニピュレータ逆運動学の勉強-2019</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/hip_vrc.html">
-          <img src="img/hip_vrc.png" width="100%"/>
-          <p>Hipparcos salon in VRChat-2019</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/v_manipu.html">
-          <img src="img/v_manipu.png" width="100%"/>
-          <p>VR機器を用いたピッキング教示データ作成システム-2019</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/fiber_light_cube.html">
-          <img src="img/fiber_light_cube.png" width="100%"/>
-          <p>Fiber light cube-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/fuji.html">
-          <img src="img/fuji.png" width="100%"/>
-          <p>VRで富士登山-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/animal.html">
-          <img src="img/animal.png" width="100%"/>
-          <p>VRでどうぶつを積む-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/avatar.html">
-          <img src="img/avatar.png" width="100%"/>
-          <p>アバター-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/mini_sumo.html">
-          <img src="img/minisumo_v2.JPG" width="100%"/>
-          <p>ミニロボット相撲-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/imu_svm.html">
-          <img src="img/imu_svm.png" width="100%"/>
-          <p>SVMを用いた移動ロボットの状態推定-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/imu_sst.html">
-          <img src="img/imu_sst.png" width="100%"/>
-          <p>特異スペクトル変換を用いた加速度の異常検知-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/anomaly.html">
-          <img src="img/anomaly.png" width="100%"/>
-          <p>異常検知の勉強-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/ar.html">
-          <img src="img/ar.jpg" width="100%"/>
-          <p>踊りを記録してARで見る-2018</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/probrobo.html">
-          <img src="img/probrobo.png" width="100%"/>
-          <p>確率ロボティクスの勉強-2017</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/driver.html">
-          <img src="img/driver.png" width="100%"/>
-          <p>デバイスドライバの勉強-2017</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/robot_lancer.html">
-          <img src="img/lancer.JPG" width="100%"/>
-          <p>ロボットランサー-2017</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/telepresence.html">
-          <img src="img/telepresence.JPG" width="100%"/>
-          <p>テレプレゼンスロボット-2017</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/inverted_pendulum.html">
-          <img src="img/inverted_pendulum.png" width="100%"/>
-          <p>回転型倒立振子-2016</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/pitching_machine.html">
-          <img src="img/pitching_machine.png" width="100%"/>
-          <p>ピッチングマシン-2015</p>
-        </a>
-      </div>
-      <div>
-        <a href="works/chahaco.html">
-          <img src="img/chahaco.JPG" width="100%"/>
-          <p>茶運びーとる-2015</p>
-        </a>
-      </div>
-    </div>
-  </body>
-<html>
+  {% endfor %}
+</div>
