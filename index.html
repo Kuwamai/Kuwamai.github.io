@@ -13,11 +13,12 @@ title: "クワマイのホームページ"
       <a href="https://github.com/Kuwamai">GitHub: Kuwamai</a><br>
       <a href="http://kuwamai.hatenablog.com">Blog: クワマイでもできる</a><br>
       <a href="https://www.youtube.com/user/KuwamaiCh">YouTube: Kuwamai</a><br>
-      <a href="https://suzuri.jp/Kuwamai">Suzuri: Kuwamai</a>
+      <a href="https://suzuri.jp/Kuwamai">Suzuri: Kuwamai</a><br>
+      <a href="{{ "/diary/" | relative_url }}">Diary</a>
     </p>
   </div>
 
-  {% for post in site.posts %}
+  {% for post in site.tags["works"] %}
     <div>
       <a href="{{ post.url | relative_url }}">
         <img src="{{ post.thumb}}" width="100%"/>
